@@ -11,7 +11,6 @@ public class AnimationManager : MonoBehaviour
     private AnimationWaypoint[] Waypoints;
     private int WaypointIndex;
     private float WaypointElapsed;
-    private Vector3 CursorTarget;
 
     public void Start()
     {
@@ -21,6 +20,7 @@ public class AnimationManager : MonoBehaviour
 
     public void Update()
     {
+        // Go to to next waypoint
         if (WaypointIndex < Waypoints.Length)
         {
             WaypointElapsed += Time.deltaTime;
@@ -33,9 +33,13 @@ public class AnimationManager : MonoBehaviour
             }
         }
 
+        // Animate cursor towards current waypoint
         if (WaypointIndex < Waypoints.Length)
         {
-            Cursor.transform.position = Vector3.Lerp(Cursor.transform.position, CursorTarget, Time.deltaTime * CursorSpeed);
+            var targetPos = Waypoints[WaypointIndex].gameObject.transform.position;
+            var oldPos = Cursor.transform.position;
+            var newPos = Vector3.Lerp(oldPos, targetPos, Time.deltaTime * CursorSpeed);
+            Cursor.transform.position = newPos;
         }
         else
         {
@@ -59,9 +63,7 @@ public class AnimationManager : MonoBehaviour
     {
         if (index < Waypoints.Length)
         {
-            Debug.Log($"Waypoint {index}, active {active}");
             Waypoints[index].gameObject.SetActive(active);
-            CursorTarget = Waypoints[index].gameObject.transform.position;
             Text.text = Waypoints[index].Text;
         }
     }
