@@ -15,7 +15,6 @@ public class AnimationManager : MonoBehaviour
     public void Start()
     {
         Waypoints = WaypointsParent.GetComponentsInChildren<AnimationWaypoint>();
-        Restart();
     }
 
     public void Update()
@@ -65,6 +64,13 @@ public class AnimationManager : MonoBehaviour
         {
             Waypoints[index].gameObject.SetActive(active);
             Text.text = Waypoints[index].Text;
+        }
+        else
+        {
+            if (active)
+            {
+                Text.text = "";
+            }
         }
     }
 }
