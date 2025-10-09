@@ -11,9 +11,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Debug - Simon.unity
     guid: b9ea4bc713b268e4595ee95ea9cea726
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Debug - Julie.unity
     guid: 7042d4d11fa84ab4fa667ed8ca1facb1
+  - enabled: 0
+    path: Assets/Scenes/Debug - Maja.unity
+    guid: 06aaa55fd5fe35c4e8c70ffd4df13fd0
+  - enabled: 0
+    path: Assets/Scenes/Debug - Rune.unity
+    guid: 14be496232e0b2d498ed0cd4179670a0
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: f54639e6e5a4cec4e94976fb608e7810
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}

@@ -29,7 +29,6 @@ extern void ARSampleMenuManager_OnEnable_m8939E29E302F1397E022C32D78C19EAC5AC2DB
 extern void ARSampleMenuManager_OnDisable_m52382A9FF69CAABF609C39913243FEDA5C8A1337 (void);
 extern void ARSampleMenuManager_Start_mBFA0AF26C01F6462545D3A04A56D0D7CAF56882D (void);
 extern void ARSampleMenuManager_Update_m5F175EE244F8E240AF9AC3A7C780D974AAE51DEC (void);
-extern void ARSampleMenuManager_SetObjectToSpawn_mE75FBE5DE5481B6CF6BADF195F2CC9776A49051D (void);
 extern void ARSampleMenuManager_ShowMenu_mE3262FD4AE0DF3CD224342BCA83D39FB7DE773B9 (void);
 extern void ARSampleMenuManager_HideMenu_mF7B36C1B86A31F383280EB20754E9176D2204493 (void);
 extern void ARSampleMenuManager_DeleteFocusedObject_m667D1CB386D6C76BC4D808BA66AA22FCD519C172 (void);
@@ -68,7 +67,7 @@ extern void ARInteractorSpawnTrigger_OnDisable_m5DC89AC2C0A9CA125BFB2E1183F67425
 extern void ARInteractorSpawnTrigger_Start_m2E882D7460D1D37C94A524F78210C528C9A59CC2 (void);
 extern void ARInteractorSpawnTrigger_Update_m124C7423B6CDFBA0B18E82369B96377FB7C660DA (void);
 extern void ARInteractorSpawnTrigger__ctor_m9C8FBBEB12B516D8BCECB494BE5407EB49D64937 (void);
-static Il2CppMethodPointer s_methodPointers[61] = 
+static Il2CppMethodPointer s_methodPointers[60] = 
 {
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mE53D95EFE4CC954EAE5ECFB8EA7F3C3090EA5FFD,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6E92536916FCFE815DCC96DCC979354D4655AD0E,
@@ -92,7 +91,6 @@ static Il2CppMethodPointer s_methodPointers[61] =
 	ARSampleMenuManager_OnDisable_m52382A9FF69CAABF609C39913243FEDA5C8A1337,
 	ARSampleMenuManager_Start_mBFA0AF26C01F6462545D3A04A56D0D7CAF56882D,
 	ARSampleMenuManager_Update_m5F175EE244F8E240AF9AC3A7C780D974AAE51DEC,
-	ARSampleMenuManager_SetObjectToSpawn_mE75FBE5DE5481B6CF6BADF195F2CC9776A49051D,
 	ARSampleMenuManager_ShowMenu_mE3262FD4AE0DF3CD224342BCA83D39FB7DE773B9,
 	ARSampleMenuManager_HideMenu_mF7B36C1B86A31F383280EB20754E9176D2204493,
 	ARSampleMenuManager_DeleteFocusedObject_m667D1CB386D6C76BC4D808BA66AA22FCD519C172,
@@ -132,7 +130,7 @@ static Il2CppMethodPointer s_methodPointers[61] =
 	ARInteractorSpawnTrigger_Update_m124C7423B6CDFBA0B18E82369B96377FB7C660DA,
 	ARInteractorSpawnTrigger__ctor_m9C8FBBEB12B516D8BCECB494BE5407EB49D64937,
 };
-static const int32_t s_InvokerIndices[61] = 
+static const int32_t s_InvokerIndices[60] = 
 {
 	26436,
 	15321,
@@ -156,7 +154,6 @@ static const int32_t s_InvokerIndices[61] =
 	15321,
 	15321,
 	15321,
-	11563,
 	15321,
 	15321,
 	15321,
@@ -200,7 +197,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples
 const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_ARStarterAssets_CodeGenModule = 
 {
 	"Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.dll",
-	61,
+	60,
 	s_methodPointers,
 	0,
 	NULL,

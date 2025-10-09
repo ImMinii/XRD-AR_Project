@@ -9,6 +9,7 @@ public class MarkerTapManager : MonoBehaviour
 {
     private Camera arCamera;
     [SerializeField] public float OffsetAboveSurface = 0.1f;
+    [SerializeField] private GameObject Terrain;
     void Start()
     {
         arCamera = Camera.main;
@@ -49,8 +50,7 @@ public class MarkerTapManager : MonoBehaviour
                 var hitPlane = hitObject.GetComponent<ARPlane>();
                 if (hitPlane != null)
                 {
-                    var anim = FindFirstObjectByType<AnimationManager>();
-                    var animObject = anim.gameObject;
+                    var animObject = Terrain;
 
                     var normal = hitPlane.normal;
                     var placePos = hit.point + normal * OffsetAboveSurface;
@@ -61,7 +61,6 @@ public class MarkerTapManager : MonoBehaviour
                     animObject.transform.rotation = Quaternion.LookRotation(projectedForward, normal);
                     animObject.transform.position = placePos;
                     animObject.SetActive(true);
-                    anim.Restart();
                 }
             }
         }

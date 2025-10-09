@@ -12,6 +12,9 @@ extern void AnimationManager_Update_mF560A5D9014027E07281D8CE9E568FEDAFA503CB (v
 extern void AnimationManager_Restart_m50128913577F13D8FCD46116CD5D7339B12064B0 (void);
 extern void AnimationManager_SetWaypointActive_m39050A2771EF8B4675450FC825402BA0DE7F393C (void);
 extern void AnimationManager__ctor_mBF675E176CC106816A52650C8335DA187AFDF1C5 (void);
+extern void AnimationPlacer_Start_m4CC2B94943A2EF931ECA9DD1A0DCB5AE15DF7A2F (void);
+extern void AnimationPlacer_Update_mD5411528F75C67EAFA19278D6577C841561095C1 (void);
+extern void AnimationPlacer__ctor_mA1320B55FE0CEE9D9C76C429043E64B381CBD361 (void);
 extern void AnimationWaypoint_OnDrawGizmos_m1CB34561D416AF217C8D0E3BCC01608F789C9B0E (void);
 extern void AnimationWaypoint__ctor_m23F9A9CD4113D7A195221861134125E14942A9F5 (void);
 extern void Bobber_Start_mA0C0DAB06D4BD314FD4B64DA7B5206E1DD428291 (void);
@@ -60,7 +63,6 @@ extern void ARTemplateMenuManager_OnEnable_mC7771FCAC5BC7EC4E5D4ACEA88994921BD41
 extern void ARTemplateMenuManager_OnDisable_m18CE4A7F77773FD577DC2F79D2862D2B10DF2E56 (void);
 extern void ARTemplateMenuManager_Start_mBFBD7136ABF7AB801C955114B0243F84DC7CA10C (void);
 extern void ARTemplateMenuManager_Update_m2F6CAA07414DB7AAB06B2CB16E76B2859441A7FB (void);
-extern void ARTemplateMenuManager_SetObjectToSpawn_m4083A5A5AB61A085289607F2B638777F9F4F1B78 (void);
 extern void ARTemplateMenuManager_ShowMenu_m369D6FEB4C85523EF7FAB62295215991973AA4E2 (void);
 extern void ARTemplateMenuManager_ShowHideModal_m3E38F285103C648F70CE8A79ACF563E678F2F508 (void);
 extern void ARTemplateMenuManager_ShowHideDebugPlane_m35F3AD6BC87D7ED54D7E6DF0AA3021D971BBDFFA (void);
@@ -104,6 +106,10 @@ extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_IEnumerator_get_Curr
 extern void RunesScript_Start_mF74ADFDAD0B4CC23FC1AA511B85431A9E37424EC (void);
 extern void RunesScript_Update_m00BA8C40BB3E8D0A8C207D80E6B77A921C735F58 (void);
 extern void RunesScript__ctor_m3756E4EDC3586FD6461FF43704285F62E74FA578 (void);
+extern void IntroTextController_Awake_mEB0AFF1785F8218F39A6C9C29C62692F5D253B23 (void);
+extern void IntroTextController_OnDestroy_m8884A00EFA1BA3A1BC7DCF6857B69341117EE9AF (void);
+extern void IntroTextController_OnObjectSpawned_m400BC0FC4D00706A70796FD82419D59B1B6975D4 (void);
+extern void IntroTextController__ctor_m3CD1F2C80C9ED0F5527E71CDD437C7106A5E6DFF (void);
 extern void MarkerScript_Start_m642325410126CD1BFD70C53B75CD30D3B34DB96D (void);
 extern void MarkerScript_ShowPopup_mDBC2A7B16CE5D5A0CD349FFF30F476C46AC4A2C2 (void);
 extern void MarkerScript__ctor_m007B732C1C8FAAFB58F09F59A408D0989A2C226B (void);
@@ -113,6 +119,9 @@ extern void MarkerTapManager__ctor_mC2D7A60C81DC7C329365F499258591D0F4AF5905 (vo
 extern void PopUpScript_ShowInfo_mB2D3910C471E02D65C0C3C038C728D51C5D7F3F6 (void);
 extern void PopUpScript_HideInfo_m1660EC4469C61EC9AEBB3CE9070706508EB6099B (void);
 extern void PopUpScript__ctor_mDEDBC366C1271E91ECB1DE6FD902534AB94E1728 (void);
+extern void WaterLevelController_Start_m38E1B6BF9069886EB9A94D36CD30FDF0282DBD70 (void);
+extern void WaterLevelController_OnSliderValueChanged_m41061F846539EDFF94193291A35CD1E022C1FC00 (void);
+extern void WaterLevelController__ctor_m3BCB0B72B79441CB0A7B05E04917645B378C12E7 (void);
 extern void SceneTemplate_RotateCube_Update_mAF2FB34B99E325443A80D60A7EB73DC092EAE9A6 (void);
 extern void SceneTemplate_RotateCube__ctor_mC7E11C05D25FFF6F8D7EA06AAE5598B497365CD2 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
@@ -129,13 +138,16 @@ extern void ARFeatheredPlaneMeshVisualizerCompanion_OnDestroy_m64B601920050D7584
 extern void ARFeatheredPlaneMeshVisualizerCompanion_Update_m541F58E1FC27F7D775FE47F2C1B1A04710BC4A27 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion_set_visualizeSurfaces_m7A7F198C97A315F6F7F58F0BDA5269863F098D68 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion__ctor_m3871FAD2A1135D983A9B5ADCD604F22949DE985C (void);
-static Il2CppMethodPointer s_methodPointers[122] = 
+static Il2CppMethodPointer s_methodPointers[131] = 
 {
 	AnimationManager_Start_mFC1F0DE53C81C57EDEC14154E3418CFE24E416A4,
 	AnimationManager_Update_mF560A5D9014027E07281D8CE9E568FEDAFA503CB,
 	AnimationManager_Restart_m50128913577F13D8FCD46116CD5D7339B12064B0,
 	AnimationManager_SetWaypointActive_m39050A2771EF8B4675450FC825402BA0DE7F393C,
 	AnimationManager__ctor_mBF675E176CC106816A52650C8335DA187AFDF1C5,
+	AnimationPlacer_Start_m4CC2B94943A2EF931ECA9DD1A0DCB5AE15DF7A2F,
+	AnimationPlacer_Update_mD5411528F75C67EAFA19278D6577C841561095C1,
+	AnimationPlacer__ctor_mA1320B55FE0CEE9D9C76C429043E64B381CBD361,
 	AnimationWaypoint_OnDrawGizmos_m1CB34561D416AF217C8D0E3BCC01608F789C9B0E,
 	AnimationWaypoint__ctor_m23F9A9CD4113D7A195221861134125E14942A9F5,
 	Bobber_Start_mA0C0DAB06D4BD314FD4B64DA7B5206E1DD428291,
@@ -184,7 +196,6 @@ static Il2CppMethodPointer s_methodPointers[122] =
 	ARTemplateMenuManager_OnDisable_m18CE4A7F77773FD577DC2F79D2862D2B10DF2E56,
 	ARTemplateMenuManager_Start_mBFBD7136ABF7AB801C955114B0243F84DC7CA10C,
 	ARTemplateMenuManager_Update_m2F6CAA07414DB7AAB06B2CB16E76B2859441A7FB,
-	ARTemplateMenuManager_SetObjectToSpawn_m4083A5A5AB61A085289607F2B638777F9F4F1B78,
 	ARTemplateMenuManager_ShowMenu_m369D6FEB4C85523EF7FAB62295215991973AA4E2,
 	ARTemplateMenuManager_ShowHideModal_m3E38F285103C648F70CE8A79ACF563E678F2F508,
 	ARTemplateMenuManager_ShowHideDebugPlane_m35F3AD6BC87D7ED54D7E6DF0AA3021D971BBDFFA,
@@ -228,6 +239,10 @@ static Il2CppMethodPointer s_methodPointers[122] =
 	RunesScript_Start_mF74ADFDAD0B4CC23FC1AA511B85431A9E37424EC,
 	RunesScript_Update_m00BA8C40BB3E8D0A8C207D80E6B77A921C735F58,
 	RunesScript__ctor_m3756E4EDC3586FD6461FF43704285F62E74FA578,
+	IntroTextController_Awake_mEB0AFF1785F8218F39A6C9C29C62692F5D253B23,
+	IntroTextController_OnDestroy_m8884A00EFA1BA3A1BC7DCF6857B69341117EE9AF,
+	IntroTextController_OnObjectSpawned_m400BC0FC4D00706A70796FD82419D59B1B6975D4,
+	IntroTextController__ctor_m3CD1F2C80C9ED0F5527E71CDD437C7106A5E6DFF,
 	MarkerScript_Start_m642325410126CD1BFD70C53B75CD30D3B34DB96D,
 	MarkerScript_ShowPopup_mDBC2A7B16CE5D5A0CD349FFF30F476C46AC4A2C2,
 	MarkerScript__ctor_m007B732C1C8FAAFB58F09F59A408D0989A2C226B,
@@ -237,6 +252,9 @@ static Il2CppMethodPointer s_methodPointers[122] =
 	PopUpScript_ShowInfo_mB2D3910C471E02D65C0C3C038C728D51C5D7F3F6,
 	PopUpScript_HideInfo_m1660EC4469C61EC9AEBB3CE9070706508EB6099B,
 	PopUpScript__ctor_mDEDBC366C1271E91ECB1DE6FD902534AB94E1728,
+	WaterLevelController_Start_m38E1B6BF9069886EB9A94D36CD30FDF0282DBD70,
+	WaterLevelController_OnSliderValueChanged_m41061F846539EDFF94193291A35CD1E022C1FC00,
+	WaterLevelController__ctor_m3BCB0B72B79441CB0A7B05E04917645B378C12E7,
 	SceneTemplate_RotateCube_Update_mAF2FB34B99E325443A80D60A7EB73DC092EAE9A6,
 	SceneTemplate_RotateCube__ctor_mC7E11C05D25FFF6F8D7EA06AAE5598B497365CD2,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
@@ -257,9 +275,9 @@ static Il2CppMethodPointer s_methodPointers[122] =
 extern void Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] = 
 {
-	{ 0x06000043, Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk },
+	{ 0x06000045, Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[122] = 
+static const int32_t s_InvokerIndices[131] = 
 {
 	15321,
 	15321,
@@ -280,6 +298,9 @@ static const int32_t s_InvokerIndices[122] =
 	15321,
 	15321,
 	15321,
+	15321,
+	15321,
+	15321,
 	15126,
 	11628,
 	15126,
@@ -314,7 +335,6 @@ static const int32_t s_InvokerIndices[122] =
 	15321,
 	15321,
 	15321,
-	11563,
 	15321,
 	15321,
 	15321,
@@ -360,12 +380,19 @@ static const int32_t s_InvokerIndices[122] =
 	15321,
 	15321,
 	15321,
+	11628,
+	15321,
+	15321,
+	15321,
 	15321,
 	15321,
 	15321,
 	15321,
 	11628,
 	15321,
+	15321,
+	15321,
+	11718,
 	15321,
 	15321,
 	15321,
@@ -388,7 +415,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	122,
+	131,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,
