@@ -3671,6 +3671,7 @@ Transform:
   - {fileID: 99937651}
   - {fileID: 237912857}
   - {fileID: 763170437}
+  - {fileID: 1079717463}
   m_Father: {fileID: 295604968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909460634
@@ -4242,6 +4243,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058624171}
   m_CullTransparentMesh: 1
+--- !u!1001 &1079717462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 886705191}
+    m_Modifications:
+    - target: {fileID: 2515378733323601703, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_Name
+      value: Cursor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177948112247594955, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: markerInfoText
+      value: "This is the second Marker! \nLorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277730634953610847, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8f71e4f29fcad842b01e149472bcda0, type: 3}
+--- !u!4 &1079717463 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1079717462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1116744776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9887,12 +9978,13 @@ PrefabInstance:
     - target: {fileID: 4177948112247594955, guid: a8f71e4f29fcad842b01e149472bcda0,
         type: 3}
       propertyPath: markerInfoText
-      value: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum
+      value: "This is the first Marker! \nLorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum"
       objectReference: {fileID: 0}
     - target: {fileID: 8796446478021152875, guid: a8f71e4f29fcad842b01e149472bcda0,
         type: 3}
