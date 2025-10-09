@@ -37,6 +37,10 @@ public class MarkerTapManager : MonoBehaviour
                     marker.ShowPopup();
                     return; // stop at the first marker hit
                 }
+                if (hit.collider.CompareTag("Board"))
+                {
+                    return; // Lock board if misclick
+                }
             }
             
             foreach (RaycastHit hit in hits)
