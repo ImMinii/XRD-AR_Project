@@ -31,7 +31,7 @@ public class MarkerTapManager : MonoBehaviour
 
             foreach (RaycastHit hit in hits)
             {
-                MarkerScript marker = hit.transform.GetComponentInChildren<MarkerScript>();
+                MarkerScript marker = hit.collider.GetComponentInChildren<MarkerScript>();
                 if (marker != null)
                 {
                     marker.ShowPopup();
