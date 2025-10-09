@@ -2,7 +2,7 @@
 - Project name: XRD-AR_Project
 - Unity version: Unity 6000.2.3f1
 - Active game object:
-  - Name: Canvas
+  - Name: Manager
   - Tag: Untagged
-  - Layer: UI
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
