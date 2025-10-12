@@ -3,13 +3,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using UnityEngine.XR.Interaction.Toolkit.Utilities;
 
 public class MarkerTapManager : MonoBehaviour
 {
     private Camera arCamera;
-    [SerializeField] public float OffsetAboveSurface = 0.1f;
-    [SerializeField] private GameObject Terrain;
+    [SerializeField] public ObjectSpawner ObjectSpawner;
+
     void Start()
     {
         arCamera = Camera.main;
@@ -43,24 +44,12 @@ public class MarkerTapManager : MonoBehaviour
                     return; // Lock board if misclick
                 }
             }
-            
             foreach (RaycastHit hit in hits)
             {
-                var hitObject = hit.transform.gameObject;
-                var hitPlane = hitObject.GetComponent<ARPlane>();
+                var hitPlane = hit.transform.gameObject.GetComponent<ARPlane>();
                 if (hitPlane != null)
                 {
-                    var animObject = Terrain;
-
-                    var normal = hitPlane.normal;
-                    var placePos = hit.point + normal * OffsetAboveSurface;
-                    var towardsPos = arCamera.transform.position;
-                    var forward = towardsPos - placePos;
-                    BurstMathUtility.ProjectOnPlane(forward, normal, out var projectedForward);
-
-                    animObject.transform.rotation = Quaternion.LookRotation(projectedForward, normal);
-                    animObject.transform.position = placePos;
-                    animObject.SetActive(true);
+                    ObjectSpawner.TrySpawnObject(hit.point, hitPlane.normal);
                 }
             }
         }

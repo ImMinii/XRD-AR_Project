@@ -32,7 +32,7 @@ public class WaterLevelController : MonoBehaviour
         {
             // Lerp between minHeight and maxHeight
             float newY = Mathf.Lerp(minHeight, maxHeight, value);
-            Vector3 localPos = waterPlane.localPosition;  
+            Vector3 localPos = waterPlane.localPosition;
             localPos.y = newY;
             waterPlane.localPosition = localPos;
         }

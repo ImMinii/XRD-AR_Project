@@ -27,16 +27,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         }
 
         [SerializeField]
-        [Tooltip("The list of prefabs available to spawn.")]
-        GameObject m_ObjectPrefab;
+        GameObject m_ObjectInstance;
 
-        /// <summary>
-        /// The list of prefabs available to spawn.
-        /// </summary>
-        public GameObject objectPrefab
+        public GameObject objectInstance
         {
-            get => m_ObjectPrefab;
-            set => m_ObjectPrefab = value;
+            get => m_ObjectInstance;
+            set => m_ObjectInstance = value;
         }
 
         [SerializeField]
@@ -169,11 +165,6 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <seealso cref="objectSpawned"/>
         public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
         {
-            if (m_ObjectPrefab == null || m_CurrentSpawnCount >= m_MaxSpawnCount)
-            {
-                return false;
-            }
-            
             if (m_OnlySpawnInView)
             {
                 var inViewMin = m_ViewportPeriphery;
@@ -186,8 +177,9 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 }
             }
 
-            
-            var newObject = Instantiate(m_ObjectPrefab);
+            var newObject = objectInstance;
+            newObject.SetActive(true);
+
             if (m_SpawnAsChildren)
                 newObject.transform.parent = transform;
 
@@ -215,7 +207,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             objectSpawned?.Invoke(newObject);
             return true;
         }
-        
+
         public void ResetSpawner()
         {
             m_CurrentSpawnCount = 0;
