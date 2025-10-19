@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Water, UI, Suimono_Water, Suimono_Depth, Suimono_Screen, XR Simulation
 - Active game object:
-  - Name: Canvas
+  - Name: HideButton
   - Tag: Untagged
   - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

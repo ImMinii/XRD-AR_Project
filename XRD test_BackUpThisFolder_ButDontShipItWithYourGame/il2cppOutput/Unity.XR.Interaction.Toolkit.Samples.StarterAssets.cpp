@@ -2442,7 +2442,7 @@ struct MultiAnchorTeleportReticle_t4D51659966078FEA51FBCD719B78BE3479F7A357  : p
 struct ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___m_CameraToFace;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_ObjectPrefab;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_ObjectInstance;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_SpawnVisualizationPrefab;
 	bool ___m_OnlySpawnInView;
 	float ___m_ViewportPeriphery;
@@ -2451,6 +2451,7 @@ struct ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111  : public MonoBeh
 	int32_t ___m_MaxSpawnCount;
 	int32_t ___m_CurrentSpawnCount;
 	Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* ___objectSpawned;
+	bool ___m_DeactivateInstanceOnAwake;
 };
 struct TeleportVolumeAnchorAffordanceStateLink_t7DA616C919D93B9F3BAE4A646B8A1C035DE7C4AD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3627,6 +3628,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA97
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ObjectSpawner_get_cameraToFace_m99ED804DC1AEAFF1FA3BE5D9CB96E15C17A907B8 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Camera_WorldToViewportPoint_m285523443225EDA79BBEF9C9EDD76B99CFED054B (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ObjectSpawner_get_objectInstance_m11861BCCEB9FAD5B1C9BC371A59C46DAC967F5C7_inline (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BurstMathUtility_ProjectOnPlane_m2C217BB9D02F0F29DF756819A072E4370A7245D8 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_vector, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_planeNormal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_projectedVector, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
@@ -8577,22 +8580,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_cameraToFace_m13429AE3
 	}
 }
 // Method Definition Index: 78317
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ObjectSpawner_get_objectPrefab_m0160EF6B4848BD83BB75C48A0CB378E9BF5D202E (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ObjectSpawner_get_objectInstance_m11861BCCEB9FAD5B1C9BC371A59C46DAC967F5C7 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:38>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_ObjectPrefab;
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:34>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_ObjectInstance;
 		return L_0;
 	}
 }
 // Method Definition Index: 78318
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_objectPrefab_m924033B5F9A7696ACB39F99EA677CD14CD61A31A (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_objectInstance_m25658556DCDEF13EB86D80D2B6B59028EB86E1FC (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:39>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:35>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_value;
-		__this->___m_ObjectPrefab = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ObjectPrefab), (void*)L_0);
+		__this->___m_ObjectInstance = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ObjectInstance), (void*)L_0);
 		return;
 	}
 }
@@ -8600,7 +8603,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_objectPrefab_m924033B5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ObjectSpawner_get_spawnVisualizationPrefab_m005CB7E8829438D62559966C3175138AF6B8E7E2 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:53>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:49>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_SpawnVisualizationPrefab;
 		return L_0;
 	}
@@ -8609,7 +8612,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_spawnVisualizationPrefab_mD4A5C8D799FCC9B21228E6055795C373AC896842 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:54>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:50>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_value;
 		__this->___m_SpawnVisualizationPrefab = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SpawnVisualizationPrefab), (void*)L_0);
@@ -8620,7 +8623,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_spawnVisualizationPref
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectSpawner_get_onlySpawnInView_m4AE6CAF69146EE5F55128F520ED6C77FBF33B376 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:68>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:64>
 		bool L_0 = __this->___m_OnlySpawnInView;
 		return L_0;
 	}
@@ -8629,7 +8632,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectSpawner_get_onlySpawnInView_m4AE6C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_onlySpawnInView_m39467C97467506B3012A050F3849BC896ECFE07A (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:69>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:65>
 		bool L_0 = ___0_value;
 		__this->___m_OnlySpawnInView = L_0;
 		return;
@@ -8639,7 +8642,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_onlySpawnInView_m39467
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ObjectSpawner_get_viewportPeriphery_m9D81A0039316F881F4F12D8F42E67ED86907DF8E (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:81>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:77>
 		float L_0 = __this->___m_ViewportPeriphery;
 		return L_0;
 	}
@@ -8648,7 +8651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ObjectSpawner_get_viewportPeriphery_m9D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_viewportPeriphery_mF79358BA74C413586E09E1DD628FC9A36EA948BA (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:82>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:78>
 		float L_0 = ___0_value;
 		__this->___m_ViewportPeriphery = L_0;
 		return;
@@ -8658,7 +8661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_viewportPeriphery_mF79
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ObjectSpawner_get_spawnAngleRange_mA5AB99C204A4669D2805081FF2B27F2C6CFB97B6 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:106>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:102>
 		float L_0 = __this->___m_SpawnAngleRange;
 		return L_0;
 	}
@@ -8667,7 +8670,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ObjectSpawner_get_spawnAngleRange_mA5AB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_spawnAngleRange_m5CA22E8E5559EAE3CAFED5E7E5D114DFD5E22EFE (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:107>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:103>
 		float L_0 = ___0_value;
 		__this->___m_SpawnAngleRange = L_0;
 		return;
@@ -8677,7 +8680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_spawnAngleRange_m5CA22
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectSpawner_get_spawnAsChildren_m4498447AB9BD7DA4F8B6B31E2C8FF0F3A25D6483 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:119>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:115>
 		bool L_0 = __this->___m_SpawnAsChildren;
 		return L_0;
 	}
@@ -8686,7 +8689,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectSpawner_get_spawnAsChildren_m44984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_spawnAsChildren_mF600D54942D35CF9B9BF4A6F8D53843AC65EDD32 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:120>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:116>
 		bool L_0 = ___0_value;
 		__this->___m_SpawnAsChildren = L_0;
 		return;
@@ -8696,7 +8699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_spawnAsChildren_mF600D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectSpawner_get_maxSpawnCount_m914C50FC40B6F36CF8993AD1B1B33EE97C1E3A5B (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:129>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:125>
 		int32_t L_0 = __this->___m_MaxSpawnCount;
 		return L_0;
 	}
@@ -8705,7 +8708,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectSpawner_get_maxSpawnCount_m914C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_set_maxSpawnCount_m435E1FA4F50076CEDAF6A54175A9636266C06653 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:130>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:126>
 		int32_t L_0 = ___0_value;
 		__this->___m_MaxSpawnCount = L_0;
 		return;
@@ -8800,10 +8803,42 @@ IL_0007:
 // Method Definition Index: 78333
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_Awake_mCFDE2E8399B486248DD536633294AC9627F1B9A8 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:145>
 		ObjectSpawner_EnsureFacingCamera_mDE91C9175F12CB11CDED0B3C82D5D68ED9CAB7B5(__this, NULL);
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:146>
+		bool L_0 = __this->___m_DeactivateInstanceOnAwake;
+		if (!L_0)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___m_ObjectInstance;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:147>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___m_ObjectInstance;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+	}
+
+IL_0028:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:148>
 		return;
 	}
 }
@@ -8817,7 +8852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_EnsureFacingCamera_mDE91C9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:150>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:152>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0 = __this->___m_CameraToFace;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8828,7 +8863,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_EnsureFacingCamera_mDE91C9
 		}
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:151>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:153>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2;
 		L_2 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___m_CameraToFace = L_2;
@@ -8837,7 +8872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_EnsureFacingCamera_mDE91C9
 
 IL_0019:
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:152>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:154>
 		return;
 	}
 }
@@ -8860,51 +8895,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectSpawner_TrySpawnObject_mBE0345EF7F
 	float V_4 = 0.0f;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
 	memset((&V_5), 0, sizeof(V_5));
-	Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* G_B16_0 = NULL;
-	Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* G_B15_0 = NULL;
-	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:172>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_ObjectPrefab;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (L_1)
-		{
-			goto IL_001c;
-		}
-	}
-	{
-		int32_t L_2 = __this->___m_CurrentSpawnCount;
-		int32_t L_3 = __this->___m_MaxSpawnCount;
-		if ((((int32_t)L_2) < ((int32_t)L_3)))
-		{
-			goto IL_001e;
-		}
-	}
-
-IL_001c:
+	Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* G_B19_0 = NULL;
+	Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* G_B18_0 = NULL;
 	{
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:174>
+		int32_t L_0 = __this->___m_CurrentSpawnCount;
+		int32_t L_1 = __this->___m_MaxSpawnCount;
+		if ((((int32_t)L_0) < ((int32_t)L_1)))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:175>
 		return (bool)0;
 	}
 
-IL_001e:
+IL_0010:
 	{
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:177>
-		bool L_4 = __this->___m_OnlySpawnInView;
-		if (!L_4)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___m_ObjectInstance;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
 		{
-			goto IL_0083;
+			goto IL_0020;
 		}
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:179>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:178>
+		return (bool)0;
+	}
+
+IL_0020:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:180>
+		bool L_4 = __this->___m_OnlySpawnInView;
+		if (!L_4)
+		{
+			goto IL_0085;
+		}
+	}
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:182>
 		float L_5 = __this->___m_ViewportPeriphery;
 		V_3 = L_5;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:180>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:183>
 		float L_6 = __this->___m_ViewportPeriphery;
 		V_4 = ((float)il2cpp_codegen_subtract((1.0f), L_6));
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:181>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:184>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_7;
 		L_7 = ObjectSpawner_get_cameraToFace_m99ED804DC1AEAFF1FA3BE5D9CB96E15C17A907B8(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_spawnPoint;
@@ -8912,13 +8952,13 @@ IL_001e:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Camera_WorldToViewportPoint_m285523443225EDA79BBEF9C9EDD76B99CFED054B(L_7, L_8, NULL);
 		V_5 = L_9;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:182>
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:183>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:185>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:186>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_5;
 		float L_11 = L_10.___z;
 		if ((((float)L_11) < ((float)(0.0f))))
 		{
-			goto IL_0081;
+			goto IL_0083;
 		}
 	}
 	{
@@ -8927,7 +8967,7 @@ IL_001e:
 		float L_14 = V_4;
 		if ((((float)L_13) > ((float)L_14)))
 		{
-			goto IL_0081;
+			goto IL_0083;
 		}
 	}
 	{
@@ -8936,7 +8976,7 @@ IL_001e:
 		float L_17 = V_3;
 		if ((((float)L_16) < ((float)L_17)))
 		{
-			goto IL_0081;
+			goto IL_0083;
 		}
 	}
 	{
@@ -8945,7 +8985,7 @@ IL_001e:
 		float L_20 = V_4;
 		if ((((float)L_19) > ((float)L_20)))
 		{
-			goto IL_0081;
+			goto IL_0083;
 		}
 	}
 	{
@@ -8954,146 +8994,163 @@ IL_001e:
 		float L_23 = V_3;
 		if ((!(((float)L_22) < ((float)L_23))))
 		{
-			goto IL_0083;
+			goto IL_0085;
 		}
-	}
-
-IL_0081:
-	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:185>
-		return (bool)0;
 	}
 
 IL_0083:
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:190>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = __this->___m_ObjectPrefab;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25;
-		L_25 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3(L_24, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var);
-		V_0 = L_25;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:191>
-		bool L_26 = __this->___m_SpawnAsChildren;
-		if (!L_26)
-		{
-			goto IL_00a8;
-		}
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:188>
+		return (bool)0;
 	}
+
+IL_0085:
 	{
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:192>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = V_0;
-		NullCheck(L_27);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
-		L_28 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_27, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
-		L_29 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_28);
-		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_28, L_29, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
+		L_24 = ObjectSpawner_get_objectInstance_m11861BCCEB9FAD5B1C9BC371A59C46DAC967F5C7_inline(__this, NULL);
+		V_0 = L_24;
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:193>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = V_0;
+		NullCheck(L_25);
+		bool L_26;
+		L_26 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_25, NULL);
+		if (L_26)
+		{
+			goto IL_009b;
+		}
 	}
-
-IL_00a8:
 	{
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:194>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = V_0;
-		NullCheck(L_30);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
-		L_31 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_30, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = ___0_spawnPoint;
-		NullCheck(L_31);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_31, L_32, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:195>
-		ObjectSpawner_EnsureFacingCamera_mDE91C9175F12CB11CDED0B3C82D5D68ED9CAB7B5(__this, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:197>
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_33 = __this->___m_CameraToFace;
-		NullCheck(L_33);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_34;
-		L_34 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_33, NULL);
-		NullCheck(L_34);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
-		L_35 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_34, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:198>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = ___0_spawnPoint;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
-		L_37 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_35, L_36, NULL);
-		V_1 = L_37;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:199>
-		BurstMathUtility_ProjectOnPlane_m2C217BB9D02F0F29DF756819A072E4370A7245D8((&V_1), (&___1_spawnNormal), (&V_2), NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:200>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = V_0;
-		NullCheck(L_38);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39;
-		L_39 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_38, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = ___1_spawnNormal;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_42;
-		L_42 = Quaternion_LookRotation_mFB02EDC8F733774DFAC3BEA4B4BB265A228F8307(L_40, L_41, NULL);
-		NullCheck(L_39);
-		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_39, L_42, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:208>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = __this->___m_SpawnVisualizationPrefab;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_44;
-		L_44 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_43, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_44)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = V_0;
+		NullCheck(L_27);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_27, (bool)1, NULL);
+	}
+
+IL_009b:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:196>
+		bool L_28 = __this->___m_SpawnAsChildren;
+		if (!L_28)
 		{
-			goto IL_0123;
+			goto IL_00b4;
 		}
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:210>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:197>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = V_0;
+		NullCheck(L_29);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30;
+		L_30 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_29, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
+		L_31 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_30);
+		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_30, L_31, NULL);
+	}
+
+IL_00b4:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:199>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = V_0;
+		NullCheck(L_32);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33;
+		L_33 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_32, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = ___0_spawnPoint;
+		NullCheck(L_33);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_33, L_34, NULL);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:200>
+		ObjectSpawner_EnsureFacingCamera_mDE91C9175F12CB11CDED0B3C82D5D68ED9CAB7B5(__this, NULL);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:202>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_35 = __this->___m_CameraToFace;
+		NullCheck(L_35);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
+		L_36 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_35, NULL);
+		NullCheck(L_36);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
+		L_37 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_36, NULL);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:203>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = ___0_spawnPoint;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39;
+		L_39 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_37, L_38, NULL);
+		V_1 = L_39;
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:204>
+		BurstMathUtility_ProjectOnPlane_m2C217BB9D02F0F29DF756819A072E4370A7245D8((&V_1), (&___1_spawnNormal), (&V_2), NULL);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:205>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_0;
+		NullCheck(L_40);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41;
+		L_41 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_40, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = ___1_spawnNormal;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_44;
+		L_44 = Quaternion_LookRotation_mFB02EDC8F733774DFAC3BEA4B4BB265A228F8307(L_42, L_43, NULL);
+		NullCheck(L_41);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_41, L_44, NULL);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:213>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_45 = __this->___m_SpawnVisualizationPrefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_46;
-		L_46 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3(L_45, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var);
-		NullCheck(L_46);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_47;
-		L_47 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_46, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:211>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_48 = L_47;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49 = ___0_spawnPoint;
-		NullCheck(L_48);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_48, L_49, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:212>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_50 = V_0;
-		NullCheck(L_50);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_51;
-		L_51 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_50, NULL);
-		NullCheck(L_51);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_52;
-		L_52 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_51, NULL);
-		NullCheck(L_48);
-		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_48, L_52, NULL);
-	}
-
-IL_0123:
-	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:214>
-		int32_t L_53 = __this->___m_CurrentSpawnCount;
-		__this->___m_CurrentSpawnCount = ((int32_t)il2cpp_codegen_add(L_53, 1));
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:215>
-		Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* L_54 = __this->___objectSpawned;
-		Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* L_55 = L_54;
-		if (L_55)
+		bool L_46;
+		L_46 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_45, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_46)
 		{
-			G_B16_0 = L_55;
-			goto IL_013d;
+			goto IL_012f;
 		}
-		G_B15_0 = L_55;
 	}
 	{
-		goto IL_0143;
-	}
-
-IL_013d:
-	{
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_56 = V_0;
-		NullCheck(G_B16_0);
-		Action_1_Invoke_mBF1852490A3A2C4508CEF22E3887E57A8E6C6E45_inline(G_B16_0, L_56, NULL);
-	}
-
-IL_0143:
-	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:215>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_47 = __this->___m_SpawnVisualizationPrefab;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_48;
+		L_48 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3(L_47, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var);
+		NullCheck(L_48);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_49;
+		L_49 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_48, NULL);
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:216>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_50 = L_49;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51 = ___0_spawnPoint;
+		NullCheck(L_50);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_50, L_51, NULL);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:217>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_52 = V_0;
+		NullCheck(L_52);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_53;
+		L_53 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_52, NULL);
+		NullCheck(L_53);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_54;
+		L_54 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_53, NULL);
+		NullCheck(L_50);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_50, L_54, NULL);
+	}
+
+IL_012f:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:219>
+		int32_t L_55 = __this->___m_CurrentSpawnCount;
+		__this->___m_CurrentSpawnCount = ((int32_t)il2cpp_codegen_add(L_55, 1));
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:220>
+		Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* L_56 = __this->___objectSpawned;
+		Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* L_57 = L_56;
+		if (L_57)
+		{
+			G_B19_0 = L_57;
+			goto IL_0149;
+		}
+		G_B18_0 = L_57;
+	}
+	{
+		goto IL_014f;
+	}
+
+IL_0149:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_58 = V_0;
+		NullCheck(G_B19_0);
+		Action_1_Invoke_mBF1852490A3A2C4508CEF22E3887E57A8E6C6E45_inline(G_B19_0, L_58, NULL);
+	}
+
+IL_014f:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:221>
 		return (bool)1;
 	}
 }
@@ -9101,9 +9158,9 @@ IL_0143:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_ResetSpawner_mE3EF28875D900EA5A74C41F4CA03C30F495FBB58 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:221>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:226>
 		__this->___m_CurrentSpawnCount = 0;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:222>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:227>
 		return;
 	}
 }
@@ -9111,14 +9168,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_ResetSpawner_mE3EF28875D90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner__ctor_m1A51792399FE9484F9E6061BC6736BF2E561544C (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:61>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:57>
 		__this->___m_OnlySpawnInView = (bool)1;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:74>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:70>
 		__this->___m_ViewportPeriphery = (0.150000006f);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:98>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:94>
 		__this->___m_SpawnAngleRange = (45.0f);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:125>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:121>
 		__this->___m_MaxSpawnCount = 1;
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:138>
+		__this->___m_DeactivateInstanceOnAwake = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -11194,6 +11253,15 @@ IL_0053:
 	{
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_0;
 		return L_24;
+	}
+}
+// Method Definition Index: 78317
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ObjectSpawner_get_objectInstance_m11861BCCEB9FAD5B1C9BC371A59C46DAC967F5C7_inline (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Samples/XR Interaction Toolkit/3.1.1/Starter Assets/Scripts/ObjectSpawner.cs:34>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_ObjectInstance;
+		return L_0;
 	}
 }
 // Method Definition Index: 45259

@@ -123,6 +123,7 @@ struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
 struct DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615;
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 struct FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA;
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 struct GoalU5BU5D_t5A602BA078885BA856A20A61D4D43910B9104714;
 struct HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622;
 struct HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658;
@@ -231,6 +232,7 @@ struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct SceneTemplate_RotateCube_tB6D99CC88F0E89517A2E6E071F0334FE69FB44CC;
 struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A;
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
+struct ShowUI_t7AC6A325B477C44DB912CE4EED078F657FD5FBFC;
 struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F;
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 struct String_t;
@@ -298,8 +300,8 @@ IL2CPP_EXTERN_C RuntimeClass* UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A96
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XRInputValueReader_1_t6B311BAB920F92BC851C1CD180A8555021DE8FC0_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____803A7E893E97DD260D941510E40576C3529F5CC8E04AC8D6B5E934336AF90045_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B71B3461C99468E06CD11A2545CF0243741A1DD4A7963DE289938BF556324089_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____1FCF9531C14FD623698BE3E466E9ACA6F1959110EDC632370A235DE78B29C6CF_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____98957A40863FA4BE68EC07B07DD9895769549AC9626B158A2D2474B4E0616A3B_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0BC7C5801980AE591057F623889B06C0D7FD554C;
 IL2CPP_EXTERN_C String_t* _stringLiteral0F52C788AC4796FE5841155F7DF3896E049C051E;
 IL2CPP_EXTERN_C String_t* _stringLiteral278DDA87522A9019A0147F14D54301096A99F2D1;
@@ -379,6 +381,7 @@ struct Exception_t_marshaled_pinvoke;
 
 struct AnimationWaypointU5BU5D_t96BB34AD75CAB9705DD786472CDE40E14F636C0F;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8;
 
@@ -918,7 +921,7 @@ struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : 
 	float ___m_Seconds;
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D522_tF75999DCEB7479B637981BD8CA018526A14A768A 
+struct __StaticArrayInitTypeSizeU3D534_tEC23FBD1E22AB2B14943666200BC22305871C9F8 
 {
 	union
 	{
@@ -928,12 +931,12 @@ struct __StaticArrayInitTypeSizeU3D522_tF75999DCEB7479B637981BD8CA018526A14A768A
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D522_tF75999DCEB7479B637981BD8CA018526A14A768A__padding[522];
+		uint8_t __StaticArrayInitTypeSizeU3D534_tEC23FBD1E22AB2B14943666200BC22305871C9F8__padding[534];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D907_t731C8E55DD71A81EFB23399E5AD0CB703A0D72F3 
+struct __StaticArrayInitTypeSizeU3D940_t38FA0F5F1FD60839F42BEB834897CC54D988A165 
 {
 	union
 	{
@@ -943,7 +946,7 @@ struct __StaticArrayInitTypeSizeU3D907_t731C8E55DD71A81EFB23399E5AD0CB703A0D72F3
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D907_t731C8E55DD71A81EFB23399E5AD0CB703A0D72F3__padding[907];
+		uint8_t __StaticArrayInitTypeSizeU3D940_t38FA0F5F1FD60839F42BEB834897CC54D988A165__padding[940];
 	};
 };
 #pragma pack(pop, tp)
@@ -2635,13 +2638,12 @@ struct MarkerScript_t3944794DCE6060158A793852F7A0AE4476673CA6  : public MonoBeha
 struct MarkerTapManager_t5BA980177341010B5265F29DCFE678A18A5A1013  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera;
-	float ___OffsetAboveSurface;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Terrain;
+	ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* ___ObjectSpawner;
 };
 struct ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___m_CameraToFace;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_ObjectPrefab;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_ObjectInstance;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_SpawnVisualizationPrefab;
 	bool ___m_OnlySpawnInView;
 	float ___m_ViewportPeriphery;
@@ -2650,6 +2652,7 @@ struct ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111  : public MonoBeh
 	int32_t ___m_MaxSpawnCount;
 	int32_t ___m_CurrentSpawnCount;
 	Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* ___objectSpawned;
+	bool ___m_DeactivateInstanceOnAwake;
 };
 struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A  : public InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B
 {
@@ -2672,6 +2675,11 @@ struct SceneTemplate_RotateCube_tB6D99CC88F0E89517A2E6E071F0334FE69FB44CC  : pub
 {
 	float ___rotateSpeed;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___objectRotation;
+};
+struct ShowUI_t7AC6A325B477C44DB912CE4EED078F657FD5FBFC  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___SetActiveOnEnable;
+	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___planeManager;
 };
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3150,8 +3158,8 @@ struct ReadOnlyList_1_t11A7E2B2381E52652C09E41FC8CEBB0675A2E801_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D522_tF75999DCEB7479B637981BD8CA018526A14A768A ___803A7E893E97DD260D941510E40576C3529F5CC8E04AC8D6B5E934336AF90045;
-	__StaticArrayInitTypeSizeU3D907_t731C8E55DD71A81EFB23399E5AD0CB703A0D72F3 ___B71B3461C99468E06CD11A2545CF0243741A1DD4A7963DE289938BF556324089;
+	__StaticArrayInitTypeSizeU3D940_t38FA0F5F1FD60839F42BEB834897CC54D988A165 ___1FCF9531C14FD623698BE3E466E9ACA6F1959110EDC632370A235DE78B29C6CF;
+	__StaticArrayInitTypeSizeU3D534_tEC23FBD1E22AB2B14943666200BC22305871C9F8 ___98957A40863FA4BE68EC07B07DD9895769549AC9626B158A2D2474B4E0616A3B;
 };
 struct String_t_StaticFields
 {
@@ -3395,6 +3403,40 @@ struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8  : public Runt
 	inline void SetAtUnchecked(il2cpp_array_size_t index, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 value)
 	{
 		m_Items[index] = value;
+	}
+};
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF  : public RuntimeArray
+{
+	ALIGN_FIELD (8) GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* m_Items[1];
+
+	inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
@@ -3833,6 +3875,10 @@ inline MarkerScript_t3944794DCE6060158A793852F7A0AE4476673CA6* Component_GetComp
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerScript_ShowPopup_mDBC2A7B16CE5D5A0CD349FFF30F476C46AC4A2C2 (MarkerScript_t3944794DCE6060158A793852F7A0AE4476673CA6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, String_t* ___0_tag, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectSpawner_TrySpawnObject_mBE0345EF7F3D3EF69F20321A4190214DB09D65B1 (ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_spawnPoint, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_spawnNormal, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowUI_SetActive_m71B1529494FB444FA1DF3776C57C69E04124BD3B (ShowUI_t7AC6A325B477C44DB912CE4EED078F657FD5FBFC* __this, GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___0_list, bool ___1_state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_exists, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SliderEvent_t92A82EF6C62E15AF92B640FE2D960E877E8C6555* Slider_get_onValueChanged_m4DA3FD0F8D7BB838F442C07F7796EEE584D0D4F6_inline (Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* __this, const RuntimeMethod* method) ;
 inline void UnityAction_1__ctor_mF770070D0A4FE93F6E04DA37D2EC60429EA545E5 (UnityAction_1_tAEFA3C1C529F0E1AD7C7C7AFC88822D359E7AC90* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
@@ -8305,12 +8351,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerScript__ctor_m007B732C1C8FAAFB58F0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTapManager_Start_mD7679F32AD9E376CA8DB148CB9B1BED054D12ABA (MarkerTapManager_t5BA980177341010B5265F29DCFE678A18A5A1013* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:15>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:16>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0;
 		L_0 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___arCamera = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___arCamera), (void*)L_0);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:16>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:17>
 		return;
 	}
 }
@@ -8340,21 +8386,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTapManager_Update_m859A5F2E484BC1F
 	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 V_6;
 	memset((&V_6), 0, sizeof(V_6));
 	ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* V_7 = NULL;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_8;
-	memset((&V_8), 0, sizeof(V_8));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_9;
-	memset((&V_9), 0, sizeof(V_9));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_10;
-	memset((&V_10), 0, sizeof(V_10));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_11;
-	memset((&V_11), 0, sizeof(V_11));
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:21>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:22>
 		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_0;
 		L_0 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
 		if (!L_0)
 		{
-			goto IL_015d;
+			goto IL_00fc;
 		}
 	}
 	{
@@ -8368,11 +8406,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTapManager_Update_m859A5F2E484BC1F
 		L_3 = ButtonControl_get_wasPressedThisFrame_m6ED1DB185035A406B0659A055C3096A5058DBD5B(L_2, NULL);
 		if (!L_3)
 		{
-			goto IL_015d;
+			goto IL_00fc;
 		}
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:23>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:24>
 		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_4;
 		L_4 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
 		NullCheck(L_4);
@@ -8382,7 +8420,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTapManager_Update_m859A5F2E484BC1F
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6;
 		L_6 = InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541(L_5, InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_RuntimeMethod_var);
 		V_0 = L_6;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:26>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:27>
 		il2cpp_codegen_runtime_class_init_inline(EventSystem_t61C51380B105BE9D2C39C4F15B7E655659957707_il2cpp_TypeInfo_var);
 		EventSystem_t61C51380B105BE9D2C39C4F15B7E655659957707* L_7;
 		L_7 = EventSystem_get_current_mC87C69FB418563DC2A571A10E2F9DB59A6785016(NULL);
@@ -8407,13 +8445,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTapManager_Update_m859A5F2E484BC1F
 		}
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:27>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:28>
 		return;
 	}
 
 IL_0048:
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:29>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:30>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_11 = __this->___arCamera;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
@@ -8421,12 +8459,12 @@ IL_0048:
 		NullCheck(L_11);
 		Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 L_14;
 		L_14 = Camera_ScreenPointToRay_m2887B9A49880B7AB670C57D66B67D6A6689FE315(L_11, L_13, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:31>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:32>
 		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
 		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_15;
 		L_15 = Physics_RaycastAll_mE94864EF8243F7D3A26C8666CEB02166C3742CB2(L_14, NULL);
 		V_1 = L_15;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:33>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:34>
 		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_16 = V_1;
 		V_2 = L_16;
 		V_3 = 0;
@@ -8435,21 +8473,21 @@ IL_0048:
 
 IL_0065:
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:33>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:34>
 		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_17 = V_2;
 		int32_t L_18 = V_3;
 		NullCheck(L_17);
 		int32_t L_19 = L_18;
 		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 L_20 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
 		V_4 = L_20;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:35>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:36>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_21;
 		L_21 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D((&V_4), NULL);
 		NullCheck(L_21);
 		MarkerScript_t3944794DCE6060158A793852F7A0AE4476673CA6* L_22;
 		L_22 = Component_GetComponentInChildren_TisMarkerScript_t3944794DCE6060158A793852F7A0AE4476673CA6_m4D5C76BB579515C0267B350900112DF52EF6FED1(L_21, Component_GetComponentInChildren_TisMarkerScript_t3944794DCE6060158A793852F7A0AE4476673CA6_m4D5C76BB579515C0267B350900112DF52EF6FED1_RuntimeMethod_var);
 		V_5 = L_22;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:36>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:37>
 		MarkerScript_t3944794DCE6060158A793852F7A0AE4476673CA6* L_23 = V_5;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_24;
@@ -8460,17 +8498,17 @@ IL_0065:
 		}
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:38>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:39>
 		MarkerScript_t3944794DCE6060158A793852F7A0AE4476673CA6* L_25 = V_5;
 		NullCheck(L_25);
 		MarkerScript_ShowPopup_mDBC2A7B16CE5D5A0CD349FFF30F476C46AC4A2C2(L_25, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:39>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:40>
 		return;
 	}
 
 IL_008e:
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:41>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:42>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_26;
 		L_26 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D((&V_4), NULL);
 		NullCheck(L_26);
@@ -8482,7 +8520,7 @@ IL_008e:
 		}
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:43>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:44>
 		return;
 	}
 
@@ -8494,7 +8532,7 @@ IL_00a2:
 
 IL_00a6:
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:33>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:34>
 		int32_t L_29 = V_3;
 		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_30 = V_2;
 		NullCheck(L_30);
@@ -8508,10 +8546,10 @@ IL_00a6:
 		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_31 = V_1;
 		V_2 = L_31;
 		V_3 = 0;
-		goto IL_0154;
+		goto IL_00f6;
 	}
 
-IL_00b5:
+IL_00b2:
 	{
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:47>
 		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_32 = V_2;
@@ -8526,100 +8564,55 @@ IL_00b5:
 		NullCheck(L_36);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37;
 		L_37 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_36, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:50>
 		NullCheck(L_37);
 		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_38;
 		L_38 = GameObject_GetComponent_TisARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0_mE27527505653C46355095DA08D22F475E77443C6(L_37, GameObject_GetComponent_TisARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0_mE27527505653C46355095DA08D22F475E77443C6_RuntimeMethod_var);
 		V_7 = L_38;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:51>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:50>
 		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_39 = V_7;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_40;
 		L_40 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_39, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_40)
 		{
-			goto IL_0150;
+			goto IL_00f2;
 		}
 	}
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:53>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_41 = __this->___Terrain;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:55>
-		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_42 = V_7;
-		NullCheck(L_42);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43;
-		L_43 = ARPlane_get_normal_m12A4F62B15333D04011C0DBD6377FA1E9B3C60B7(L_42, NULL);
-		V_8 = L_43;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:56>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:52>
+		ObjectSpawner_t5ACB5F84845F9E874424BADB585AB17DD4644111* L_41 = __this->___ObjectSpawner;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
+		L_42 = RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39((&V_6), NULL);
+		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_43 = V_7;
+		NullCheck(L_43);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44;
-		L_44 = RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39((&V_6), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = V_8;
-		float L_46 = __this->___OffsetAboveSurface;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47;
-		L_47 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_45, L_46, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48;
-		L_48 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_44, L_47, NULL);
-		V_9 = L_48;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:57>
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_49 = __this->___arCamera;
-		NullCheck(L_49);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_50;
-		L_50 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_49, NULL);
-		NullCheck(L_50);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
-		L_51 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_50, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:58>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = V_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
-		L_53 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_51, L_52, NULL);
-		V_10 = L_53;
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:59>
-		BurstMathUtility_ProjectOnPlane_m2C217BB9D02F0F29DF756819A072E4370A7245D8((&V_10), (&V_8), (&V_11), NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:61>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_54 = L_41;
-		NullCheck(L_54);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_55;
-		L_55 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_54, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = V_11;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_8;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_58;
-		L_58 = Quaternion_LookRotation_mFB02EDC8F733774DFAC3BEA4B4BB265A228F8307(L_56, L_57, NULL);
-		NullCheck(L_55);
-		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_55, L_58, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:62>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_59 = L_54;
-		NullCheck(L_59);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_60;
-		L_60 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_59, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = V_9;
-		NullCheck(L_60);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_60, L_61, NULL);
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:63>
-		NullCheck(L_59);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_59, (bool)1, NULL);
+		L_44 = ARPlane_get_normal_m12A4F62B15333D04011C0DBD6377FA1E9B3C60B7(L_43, NULL);
+		NullCheck(L_41);
+		bool L_45;
+		L_45 = ObjectSpawner_TrySpawnObject_mBE0345EF7F3D3EF69F20321A4190214DB09D65B1(L_41, L_42, L_44, NULL);
 	}
 
-IL_0150:
+IL_00f2:
 	{
-		int32_t L_62 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_62, 1));
+		int32_t L_46 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_46, 1));
 	}
 
-IL_0154:
+IL_00f6:
 	{
 		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:47>
-		int32_t L_63 = V_3;
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_64 = V_2;
-		NullCheck(L_64);
-		if ((((int32_t)L_63) < ((int32_t)((int32_t)(((RuntimeArray*)L_64)->max_length)))))
+		int32_t L_47 = V_3;
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_48 = V_2;
+		NullCheck(L_48);
+		if ((((int32_t)L_47) < ((int32_t)((int32_t)(((RuntimeArray*)L_48)->max_length)))))
 		{
-			goto IL_00b5;
+			goto IL_00b2;
 		}
 	}
 
-IL_015d:
+IL_00fc:
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:67>
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:56>
 		return;
 	}
 }
@@ -8627,8 +8620,6 @@ IL_015d:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerTapManager__ctor_mC2D7A60C81DC7C329365F499258591D0F4AF5905 (MarkerTapManager_t5BA980177341010B5265F29DCFE678A18A5A1013* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/MarkerTapManager.cs:11>
-		__this->___OffsetAboveSurface = (0.100000001f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -8687,6 +8678,199 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PopUpScript__ctor_mDEDBC366C1271E91ECB1D
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 79606
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowUI_OnEnable_m4E2BAACA64186D1AD0D3280FB1F18D5AC963AF7D (ShowUI_t7AC6A325B477C44DB912CE4EED078F657FD5FBFC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARTrackableManager_5_get_trackables_m05EA665E785FD12BBFEB6DF9C2208B4222217CF7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mF71F7AD2C7C3D2A3DE840026172981A72436CB47_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mA7E36939DA28B409D55BE5435221AAC46E40F14C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TrackableCollection_1_GetEnumerator_m97880EA61861EAC2C10D9978BA6BFD5DF9110E89_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tA6706F09647162500C03E08B6768056515FEF90A V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableCollection_1_t020ABE893108AA7BEFF830BE31295402EFBDDCA7 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:13>
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___SetActiveOnEnable;
+		ShowUI_SetActive_m71B1529494FB444FA1DF3776C57C69E04124BD3B(__this, L_0, (bool)1, NULL);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:14>
+		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_1 = __this->___planeManager;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_1, NULL);
+		if (L_2)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:14>
+		return;
+	}
+
+IL_001b:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:16>
+		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_3 = __this->___planeManager;
+		NullCheck(L_3);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_3, (bool)0, NULL);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:18>
+		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_4 = __this->___planeManager;
+		NullCheck(L_4);
+		TrackableCollection_1_t020ABE893108AA7BEFF830BE31295402EFBDDCA7 L_5;
+		L_5 = ARTrackableManager_5_get_trackables_m05EA665E785FD12BBFEB6DF9C2208B4222217CF7(L_4, ARTrackableManager_5_get_trackables_m05EA665E785FD12BBFEB6DF9C2208B4222217CF7_RuntimeMethod_var);
+		V_1 = L_5;
+		Enumerator_tA6706F09647162500C03E08B6768056515FEF90A L_6;
+		L_6 = TrackableCollection_1_GetEnumerator_m97880EA61861EAC2C10D9978BA6BFD5DF9110E89((&V_1), TrackableCollection_1_GetEnumerator_m97880EA61861EAC2C10D9978BA6BFD5DF9110E89_RuntimeMethod_var);
+		V_0 = L_6;
+		goto IL_004f;
+	}
+
+IL_003d:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:18>
+		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_7;
+		L_7 = Enumerator_get_Current_mA7E36939DA28B409D55BE5435221AAC46E40F14C((&V_0), Enumerator_get_Current_mA7E36939DA28B409D55BE5435221AAC46E40F14C_RuntimeMethod_var);
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:20>
+		NullCheck(L_7);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_7, NULL);
+		NullCheck(L_8);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)0, NULL);
+	}
+
+IL_004f:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:18>
+		bool L_9;
+		L_9 = Enumerator_MoveNext_mF71F7AD2C7C3D2A3DE840026172981A72436CB47((&V_0), Enumerator_MoveNext_mF71F7AD2C7C3D2A3DE840026172981A72436CB47_RuntimeMethod_var);
+		if (L_9)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:22>
+		return;
+	}
+}
+// Method Definition Index: 79607
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowUI_SetActive_m71B1529494FB444FA1DF3776C57C69E04124BD3B (ShowUI_t7AC6A325B477C44DB912CE4EED078F657FD5FBFC* __this, GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___0_list, bool ___1_state, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* V_0 = NULL;
+	int32_t V_1 = 0;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:26>
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = ___0_list;
+		if (L_0)
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:26>
+		return;
+	}
+
+IL_0004:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:27>
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = ___0_list;
+		V_0 = L_1;
+		V_1 = 0;
+		goto IL_0030;
+	}
+
+IL_000a:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:27>
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_2 = V_0;
+		int32_t L_3 = V_1;
+		NullCheck(L_2);
+		int32_t L_4 = L_3;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		V_2 = L_5;
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:29>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_7;
+		L_7 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_7)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = V_2;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
+		L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_10;
+		L_10 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_8, L_9, NULL);
+		if (L_10)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:30>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = V_2;
+		bool L_12 = ___1_state;
+		NullCheck(L_11);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, L_12, NULL);
+	}
+
+IL_002c:
+	{
+		int32_t L_13 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_13, 1));
+	}
+
+IL_0030:
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:27>
+		int32_t L_14 = V_1;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_15 = V_0;
+		NullCheck(L_15);
+		if ((((int32_t)L_14) < ((int32_t)((int32_t)(((RuntimeArray*)L_15)->max_length)))))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		//<source_info:C:/Users/simon/Desktop/Uni/Software/XRD-AR_Project/Assets/Scripts/ShowUI.cs:32>
+		return;
+	}
+}
+// Method Definition Index: 79608
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowUI__ctor_m8FA8DC9423B9D7DF1F117240197BBE5334FAE650 (ShowUI_t7AC6A325B477C44DB912CE4EED078F657FD5FBFC* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 79609
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterLevelController_Start_m38E1B6BF9069886EB9A94D36CD30FDF0282DBD70 (WaterLevelController_t367E0C54B59B12461C8697EA8F06830FE39D0905* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8733,7 +8917,7 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 79607
+// Method Definition Index: 79610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterLevelController_OnSliderValueChanged_m41061F846539EDFF94193291A35CD1E022C1FC00 (WaterLevelController_t367E0C54B59B12461C8697EA8F06830FE39D0905* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8826,7 +9010,7 @@ IL_0089:
 		return;
 	}
 }
-// Method Definition Index: 79608
+// Method Definition Index: 79611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterLevelController__ctor_m3BCB0B72B79441CB0A7B05E04917645B378C12E7 (WaterLevelController_t367E0C54B59B12461C8697EA8F06830FE39D0905* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8848,7 +9032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterLevelController__ctor_m3BCB0B72B794
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79609
+// Method Definition Index: 79612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneTemplate_RotateCube_Update_mAF2FB34B99E325443A80D60A7EB73DC092EAE9A6 (SceneTemplate_RotateCube_tB6D99CC88F0E89517A2E6E071F0334FE69FB44CC* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8869,7 +9053,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneTemplate_RotateCube_Update_mAF2FB34
 		return;
 	}
 }
-// Method Definition Index: 79610
+// Method Definition Index: 79613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneTemplate_RotateCube__ctor_mC7E11C05D25FFF6F8D7EA06AAE5598B497365CD2 (SceneTemplate_RotateCube_tB6D99CC88F0E89517A2E6E071F0334FE69FB44CC* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8887,41 +9071,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneTemplate_RotateCube__ctor_mC7E11C05
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79611
+// Method Definition Index: 79614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____803A7E893E97DD260D941510E40576C3529F5CC8E04AC8D6B5E934336AF90045_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B71B3461C99468E06CD11A2545CF0243741A1DD4A7963DE289938BF556324089_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____1FCF9531C14FD623698BE3E466E9ACA6F1959110EDC632370A235DE78B29C6CF_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____98957A40863FA4BE68EC07B07DD9895769549AC9626B158A2D2474B4E0616A3B_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)907));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)940));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B71B3461C99468E06CD11A2545CF0243741A1DD4A7963DE289938BF556324089_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____1FCF9531C14FD623698BE3E466E9ACA6F1959110EDC632370A235DE78B29C6CF_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)522));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)534));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____803A7E893E97DD260D941510E40576C3529F5CC8E04AC8D6B5E934336AF90045_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____98957A40863FA4BE68EC07B07DD9895769549AC9626B158A2D2474B4E0616A3B_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = ((int32_t)18);
-		(&V_0)->___TotalTypes = ((int32_t)21);
+		(&V_0)->___TotalFiles = ((int32_t)19);
+		(&V_0)->___TotalTypes = ((int32_t)22);
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 79612
+// Method Definition Index: 79615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9007,7 +9191,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79613
+// Method Definition Index: 79616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* CutoutMaskUI_get_materialForRendering_m1E481305FA17C6A7AC2A91C9A8BC62CBA40EB21A (CutoutMaskUI_t331D7742560D4950E00071EF06D12E7CEB17C4C2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9033,7 +9217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8
 		return L_2;
 	}
 }
-// Method Definition Index: 79614
+// Method Definition Index: 79617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CutoutMaskUI__ctor_m6E3A5D1ED0A30B06735B45E13EE7641085EADE2D (CutoutMaskUI_t331D7742560D4950E00071EF06D12E7CEB17C4C2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9048,7 +9232,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CutoutMaskUI__ctor_m6E3A5D1ED0A30B06735B
 		return;
 	}
 }
-// Method Definition Index: 79615
+// Method Definition Index: 79618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CutoutMaskUI__cctor_m3FA8526EBAB8E0DFA5881AEBA12CDA8F6533303B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9074,7 +9258,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CutoutMaskUI__cctor_m3FA8526EBAB8E0DFA58
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79616
+// Method Definition Index: 79619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ARFeatheredPlaneMeshVisualizerCompanion_get_planeRenderer_mDCF643A0BFEEAF5E7633C9671B70DB7C4E4366F0 (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9083,7 +9267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Renderer_t320575F223BCB177A982E5DDB5DB19FAA89
 		return L_0;
 	}
 }
-// Method Definition Index: 79617
+// Method Definition Index: 79620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_set_planeRenderer_mDB8960380EE4982B885831A0AFD3502D318D50B4 (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9094,7 +9278,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_
 		return;
 	}
 }
-// Method Definition Index: 79618
+// Method Definition Index: 79621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ARFeatheredPlaneMeshVisualizerCompanion_get_fadeSpeed_mB402D751AE02B0F2155B4B04408EF29847025580 (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9103,7 +9287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ARFeatheredPlaneMeshVisualizerCompanion
 		return L_0;
 	}
 }
-// Method Definition Index: 79619
+// Method Definition Index: 79622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_set_fadeSpeed_m580ED878B33180397E4112E698B58B9CE66049C0 (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9113,7 +9297,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_
 		return;
 	}
 }
-// Method Definition Index: 79620
+// Method Definition Index: 79623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_Awake_m92E791FA5CC3548CA80CA21599D1800B19AB534C (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9140,7 +9324,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_
 		return;
 	}
 }
-// Method Definition Index: 79621
+// Method Definition Index: 79624
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_OnDestroy_m64B601920050D7584FAF2D2F1E132CB57A5742BC (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9158,7 +9342,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_
 		return;
 	}
 }
-// Method Definition Index: 79622
+// Method Definition Index: 79625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_Update_m541F58E1FC27F7D775FE47F2C1B1A04710BC4A27 (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9196,7 +9380,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_
 		return;
 	}
 }
-// Method Definition Index: 79623
+// Method Definition Index: 79626
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion_set_visualizeSurfaces_m7A7F198C97A315F6F7F58F0BDA5269863F098D68 (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9247,7 +9431,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 79624
+// Method Definition Index: 79627
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFeatheredPlaneMeshVisualizerCompanion__ctor_m3871FAD2A1135D983A9B5ADCD604F22949DE985C (ARFeatheredPlaneMeshVisualizerCompanion_tDE56FFED5B1D60BF9CFFE40E87360C312EA938E3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;

@@ -133,12 +133,18 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <seealso cref="TrySpawnObject"/>
         public event Action<GameObject> objectSpawned;
 
+        [SerializeField]
+[Tooltip("If true, the objectInstance will be deactivated on Awake so it only appears when spawned.")]
+bool m_DeactivateInstanceOnAwake = true;
+
         /// <summary>
         /// See <see cref="MonoBehaviour"/>.
         /// </summary>
         void Awake()
         {
             EnsureFacingCamera();
+            if (m_DeactivateInstanceOnAwake && m_ObjectInstance != null)
+        m_ObjectInstance.SetActive(false);
         }
 
         void EnsureFacingCamera()
@@ -165,6 +171,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <seealso cref="objectSpawned"/>
         public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
         {
+            if (m_CurrentSpawnCount >= m_MaxSpawnCount)
+        return false;
+
+    if (m_ObjectInstance == null)
+        return false;
+
             if (m_OnlySpawnInView)
             {
                 var inViewMin = m_ViewportPeriphery;
@@ -178,7 +190,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             }
 
             var newObject = objectInstance;
-            newObject.SetActive(true);
+            if (!newObject.activeSelf)
+        newObject.SetActive(true);
 
             if (m_SpawnAsChildren)
                 newObject.transform.parent = transform;

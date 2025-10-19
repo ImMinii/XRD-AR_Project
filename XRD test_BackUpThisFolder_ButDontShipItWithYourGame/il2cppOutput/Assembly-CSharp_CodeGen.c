@@ -119,6 +119,9 @@ extern void MarkerTapManager__ctor_mC2D7A60C81DC7C329365F499258591D0F4AF5905 (vo
 extern void PopUpScript_ShowInfo_mB2D3910C471E02D65C0C3C038C728D51C5D7F3F6 (void);
 extern void PopUpScript_HideInfo_m1660EC4469C61EC9AEBB3CE9070706508EB6099B (void);
 extern void PopUpScript__ctor_mDEDBC366C1271E91ECB1DE6FD902534AB94E1728 (void);
+extern void ShowUI_OnEnable_m4E2BAACA64186D1AD0D3280FB1F18D5AC963AF7D (void);
+extern void ShowUI_SetActive_m71B1529494FB444FA1DF3776C57C69E04124BD3B (void);
+extern void ShowUI__ctor_m8FA8DC9423B9D7DF1F117240197BBE5334FAE650 (void);
 extern void WaterLevelController_Start_m38E1B6BF9069886EB9A94D36CD30FDF0282DBD70 (void);
 extern void WaterLevelController_OnSliderValueChanged_m41061F846539EDFF94193291A35CD1E022C1FC00 (void);
 extern void WaterLevelController__ctor_m3BCB0B72B79441CB0A7B05E04917645B378C12E7 (void);
@@ -138,7 +141,7 @@ extern void ARFeatheredPlaneMeshVisualizerCompanion_OnDestroy_m64B601920050D7584
 extern void ARFeatheredPlaneMeshVisualizerCompanion_Update_m541F58E1FC27F7D775FE47F2C1B1A04710BC4A27 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion_set_visualizeSurfaces_m7A7F198C97A315F6F7F58F0BDA5269863F098D68 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion__ctor_m3871FAD2A1135D983A9B5ADCD604F22949DE985C (void);
-static Il2CppMethodPointer s_methodPointers[131] = 
+static Il2CppMethodPointer s_methodPointers[134] = 
 {
 	AnimationManager_Start_mFC1F0DE53C81C57EDEC14154E3418CFE24E416A4,
 	AnimationManager_Update_mF560A5D9014027E07281D8CE9E568FEDAFA503CB,
@@ -252,6 +255,9 @@ static Il2CppMethodPointer s_methodPointers[131] =
 	PopUpScript_ShowInfo_mB2D3910C471E02D65C0C3C038C728D51C5D7F3F6,
 	PopUpScript_HideInfo_m1660EC4469C61EC9AEBB3CE9070706508EB6099B,
 	PopUpScript__ctor_mDEDBC366C1271E91ECB1DE6FD902534AB94E1728,
+	ShowUI_OnEnable_m4E2BAACA64186D1AD0D3280FB1F18D5AC963AF7D,
+	ShowUI_SetActive_m71B1529494FB444FA1DF3776C57C69E04124BD3B,
+	ShowUI__ctor_m8FA8DC9423B9D7DF1F117240197BBE5334FAE650,
 	WaterLevelController_Start_m38E1B6BF9069886EB9A94D36CD30FDF0282DBD70,
 	WaterLevelController_OnSliderValueChanged_m41061F846539EDFF94193291A35CD1E022C1FC00,
 	WaterLevelController__ctor_m3BCB0B72B79441CB0A7B05E04917645B378C12E7,
@@ -277,7 +283,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] =
 {
 	{ 0x06000045, Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[131] = 
+static const int32_t s_InvokerIndices[134] = 
 {
 	15321,
 	15321,
@@ -392,6 +398,9 @@ static const int32_t s_InvokerIndices[131] =
 	15321,
 	15321,
 	15321,
+	5828,
+	15321,
+	15321,
 	11718,
 	15321,
 	15321,
@@ -415,7 +424,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	131,
+	134,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,
