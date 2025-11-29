@@ -1,18 +1,18 @@
 # Blog posts
 
-[Blog 1 – XR introduction](blog/blog1.md)
+[Blog 1 – XR introduction](Blog/blog1.md)
 
-[Blog 2 – AR 1st lab week](blog/blog2.md)
+[Blog 2 – AR 1st lab week](Blog/blog2.md)
 
-[Blog 3 – AR 2nd lab week](blog/blog3.md)
+[Blog 3 – AR 2nd lab week](Blog/blog3.md)
 
-[Blog 4 – AR 3rd lab week](blog/blog4.md)
+[Blog 4 – AR 3rd lab week](Blog/blog4.md)
 
-[Blog 5 – VR 1st lab week](blog/blog5.md)
+[Blog 5 – VR 1st lab week](Blog/blog5.md)
 
-[Blog 6 – VR 2nd lab week](blog/blog6.md)
+[Blog 6 – VR 2nd lab week](Blog/blog6.md)
 
-[Blog 7 – VR 3rd lab week](blog/blog7.md)
+[Blog 7 – VR 3rd lab week](Blog/blog7.md)
 
 # Videos
 
