@@ -43,3 +43,13 @@
 [Simple chair](https://assetstore.unity.com/packages/3d/props/simple-chair-297945)
 
 [Storage](https://assetstore.unity.com/packages/3d/environments/urban/low-poly-storage-pack-101732)
+
+# GitHub usernames
+
+Maja: Maja4666
+
+Julie: juli175h
+
+Simon: ImMinii
+
+Rune: runelauridsen
