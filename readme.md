@@ -14,6 +14,16 @@
 
 [Blog 7 – VR 3rd lab week](Blog/blog7.md)
 
+# Personal reflections
+
+[Maja](Blog/reflections_maja.md)
+
+[Julie](Blog/reflections_julie.md)
+
+[Simon](Blog/reflections_simon.md)
+
+[Rune](Blog/reflections_rune.md)
+
 # Videos
 
 [Video of AR project](https://www.youtube.com/shorts/hYVXZW0qe-w)
